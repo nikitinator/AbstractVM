@@ -6,7 +6,7 @@
 #    By: snikitin <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2018/09/03 14:18:32 by snikitin          #+#    #+#              #
-#    Updated: 2018/09/03 14:18:45 by snikitin         ###   ########.fr        #
+#    Updated: 2018/09/18 17:32:56 by snikitin         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -17,13 +17,14 @@ OBJ_DIR := ./obj/
 INC_DIR := ./inc/
 
 SRC :=	main.cpp\
-        .class.cpp\
+        OperandCreator.class.cpp\
 
 OBJ = $(addprefix $(OBJ_DIR), $(notdir $(SRC:.cpp=.o)))
 
-INC = $(INC_DIR).class.hpp\
+INC = $(INC_DIR)IOperand.class.hpp\
+	  $(INC_DIR)OperandCreator.class.hpp\
 
-CC_FLAGS := -std=c++98 -pedantic -Wall -Wextra -Werror 
+CC_FLAGS := -pedantic -Wall -Wextra -Werror #-std=c++98 
 HEADER_FLAGS := -I $(INC_DIR)
 
 CC := clang++

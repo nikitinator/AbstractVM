@@ -1,33 +1,33 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   AVM.class.cpp                                      :+:      :+:    :+:   */
+/*   Avm.class.cpp                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: snikitin <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2018/09/03 15:49:39 by snikitin          #+#    #+#             */
-/*   Updated: 2018/09/03 15:49:39 by snikitin         ###   ########.fr       */
+/*   Created: 2018/09/03 16:00:47 by snikitin          #+#    #+#             */
+/*   Updated: 2018/09/05 14:23:14 by snikitin         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "AVM.class.hpp"
+#include "Avm.class.hpp"
 
-AVM::AVM()
+Avm::Avm()
 {
 }
 
-AVM::AVM(const AVM& aVM)
+Avm::Avm(const Avm& avm)
 {
-	*this = aVM;
+	*this = avm;
 }
 
-AVM::~AVM()
+Avm::~Avm()
 {
 }
 
-AVM&	operator=(const AVM& aVM)
+Avm&	operator=(const Avm& avm)
 {
-	if (this == &aVM)
+	if (this == &avm)
 		return (*this);
 	return (*this);
 }
